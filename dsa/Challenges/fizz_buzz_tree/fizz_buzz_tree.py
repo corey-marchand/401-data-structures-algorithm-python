@@ -19,8 +19,29 @@ class Node:
         elif node % 5 == 0:
             node == 'buzz'
 
-        print(node)
+    def findMaximumValue(self):
+        node = BinaryTree.root
+        max_node = []
 
-        FizzBuzzTree(self.left)
-        FizzBuzzTree(self.right)
+
+        if node == None:
+            return 'tree does not exist'
+
+        if node.left:
+            if node.left >= node
+                max_node = node.left
+            elif node >= node.left
+                max_node = node
+        if node.right:
+            if node.right >= node
+                max_node = node.right
+            elif node >= node.right
+                max_node = node
+        return max_node:
+
+        findMaximumValue(node.left)
+        findMaximumValue(node.right)
+
+
+
 
