@@ -1,12 +1,12 @@
-class BinaryTree:
-    def __init__(self, root):
-        self.root = root
-
 class Node:
     def __init__(self, left, right, value):
         self.left = left
         self.right = right
         self.value = value
+
+class BinaryTree:
+    def __init__(self, root):
+        self.root = root
 
     def FizzBuzzTree(self, tree):
         node = self.value
@@ -19,29 +19,30 @@ class Node:
         elif node % 5 == 0:
             node == 'buzz'
 
-    def findMaximumValue(self):
-        node = BinaryTree.root
-        max_node = []
+    def find_maximum_value(self):
+        root_node = self.root
 
+        if not root_node:
+            raise ValueError('Empty tree')
 
-        if node == None:
-            return 'tree does not exist'
+        max_value = root_node.value
 
-        if node.left:
-            if node.left >= node
-                max_node = node.left
-            elif node >= node.left
-                max_node = node
-        if node.right:
-            if node.right >= node
-                max_node = node.right
-            elif node >= node.right
-                max_node = node
-        return max_node:
+        def max_recursion(node):
+            if not node:
+                return
 
-        findMaximumValue(node.left)
-        findMaximumValue(node.right)
+            if node.left:
+                if node.left.value > max_value:
+                    max_value = node.left.value
 
+                max_recursion(node.left)
 
+            if node.right:
+                if node.right.value > max_value:
+                    max_value = node.right.value
 
+                max_recursion(node.right)
 
+        max_recursion(root_node)
+
+        return max_value
