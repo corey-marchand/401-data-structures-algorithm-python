@@ -1,0 +1,1 @@
+iterate over the array, inside the for loop, assign a variable to each indiviual item minus one and assign a temporary variable to each item in the array.  While J is greater or equal to 0 and temp is less than item at j, assign array at j + 1 to array at j, then j is j -1, outside the while statement, arr at j +1 equals the temp variable.
