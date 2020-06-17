@@ -1,0 +1,1 @@
+I was not able to decipher the very bottom of the merge sort function provided.  So i decided to find/come up with my own solution.  The merge sort, takes in a array. then it splits the array up by a midpoint and assigns the left and right side to their own variable.
