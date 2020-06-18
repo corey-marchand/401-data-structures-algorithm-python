@@ -1,0 +1,1 @@
+In this pseduo code, it takes two functions.  A quicksort function, and then a partition function.  Quick sort determines whether or not the low is less then the high. Partition is what breaks down the array.  It dtermines and reorganizes the array based off of which numbers are greater after it breaks them apart.
