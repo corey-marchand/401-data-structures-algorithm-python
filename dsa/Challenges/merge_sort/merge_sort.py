@@ -12,7 +12,7 @@ def merge_sort(list_ex):
         k = 0
 
         while i < len(left) and j < len(right):
-            if left[i] < right[j]:
+            if left[i] <= right[j]:
                 list_ex[k] = left[i]
                 i += 1
 
@@ -32,6 +32,7 @@ def merge_sort(list_ex):
             j += 1
             k += 1
 
-
-list_ex = [8,4,23,42,16,15]
-print(merge_sort([]))
+if __name__ == "__main__":
+    list_ex = [8,4,23,42,16,15]
+    merge_sort(list_ex)
+    print(list_ex)
