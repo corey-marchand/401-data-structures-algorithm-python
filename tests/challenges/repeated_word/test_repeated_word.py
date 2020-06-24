@@ -5,17 +5,17 @@ def test_one():
     expected = 'soda'
     assert actual == expected
 
-def test_one():
-    actual = repeated_word_return("i love me and me love me")
-    expected = 'me'
+def test_two():
+    actual = repeated_word_return("i love love")
+    expected = 'love'
     assert actual == expected
 
-def test_one():
+def test_three():
     actual = repeated_word_return("cant stand this sun it is not the sun i like")
     expected = 'sun'
     assert actual == expected
 
-def test_one():
+def test_four():
     actual = repeated_word_return("is it taco tuesday or is it taco tuedsay?")
     expected = 'is'
     assert actual == expected
