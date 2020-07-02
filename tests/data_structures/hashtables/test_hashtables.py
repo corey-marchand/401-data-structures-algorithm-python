@@ -27,8 +27,8 @@ def test_HashTable_get():
 
 def test_HashTable_contains():
     test_hash = HashTable(10)
-    test_hash.add('my', 45)
-    actual = test_hash.contains('my')
+    test_hash.add('loo', 45)
+    actual = test_hash.contains('loo')
     expected = True
     assert actual == expected
 
